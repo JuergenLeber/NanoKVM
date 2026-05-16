@@ -32,4 +32,8 @@ func hidRouter(r *gin.Engine) {
 	api.POST("/hid/reset", service.ResetHid)  // reset hid
 
 	localAPI.POST("/usb/recover", service.RecoverUSB)
+
+	api.GET("/hid/usb-descriptor", service.GetUsbDescriptor)       // get USB descriptor
+	api.POST("/hid/usb-descriptor", service.SetUsbDescriptor)      // set USB descriptor
+	api.POST("/hid/usb-descriptor/restore", service.RestoreUsbDefaults) // restore USB defaults
 }
