@@ -186,7 +186,7 @@ export const UsbDescriptor = () => {
         .map((p) => ({ value: p.id, label: t(p.labelKey) }))
     },
     {
-      label: '',
+      label: t('settings.device.usbDescriptor.presetGroups.custom'),
       options: [{ value: 'custom', label: t('settings.device.usbDescriptor.presetGroups.custom') }]
     }
   ];
