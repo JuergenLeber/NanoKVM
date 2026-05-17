@@ -1,3 +1,9 @@
+# Special fork of NanoKVM
+Differences to the upstream version:
+* Documentation about how to build, see [BUILDING.md](./BUILDING.md)
+* Some minor fixes (e.g. LD_LIBRARY_PATH)
+* Extended web UI to set the USB descriptor to e.g. a Logitech keyboard or mouse
+
 # NanoKVM
 
 <div align="center">

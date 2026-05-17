@@ -9,21 +9,20 @@ This guide covers building the server binary and web frontend, deploying to a Na
 | Tool | Purpose | Notes |
 |------|---------|-------|
 | Docker | Cross-compile Go for RISC-V | Docker Desktop or Colima |
-| pnpm | Build web frontend | `npm install -g pnpm` |
+| pnpm | Build web frontend | `brew install pnpm` or `npm install -g pnpm` |
 | ssh / scp | Deploy to device | Device must be on your network |
 
 ### ARM Mac (Apple Silicon) — additional setup
-
 The build container runs x86_64 binaries. On ARM Macs you need QEMU emulation via Docker buildx:
 
 ```bash
 brew install docker-buildx
 ```
 
-Then enable it:
+No need to enable it separately but important to set the default build platform before executing docker or the make commands:
 
 ```bash
-docker buildx install
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 ```
 
 ---
@@ -86,7 +85,7 @@ scp server/NanoKVM-Server root@<device-ip>:/kvmapp/server/NanoKVM-Server
 ### 4b. Deploy the web frontend
 
 ```bash
-scp -r web/dist/* root@<device-ip>:/kvmapp/server/www/
+scp -r web/dist/* root@<device-ip>:/kvmapp/server/web/
 ```
 
 ### 4c. Deploy the init script (if modified)
@@ -103,19 +102,6 @@ ssh root@<device-ip> /etc/init.d/S95nanokvm restart
 ```
 
 The startup script copies `/kvmapp/server/` to `/tmp/server/` and runs from there, so the restart picks up your new binary automatically.
-
-#### If the server fails to start with a missing library error
-
-The musl dynamic linker on this device has no configured search path for `dl_lib/`. If you see `Error loading shared library libkvm.so`, patch the startup script to set `LD_LIBRARY_PATH` permanently:
-
-```bash
-sed -i 's|/tmp/server/NanoKVM-Server &|LD_LIBRARY_PATH=/tmp/server/dl_lib /tmp/server/NanoKVM-Server \&|g' /etc/init.d/S95nanokvm
-/etc/init.d/S95nanokvm restart
-```
-
-This survives reboots. The patch is idempotent — safe to run more than once.
-
----
 
 ## 5. Back up USB descriptor configuration
 
