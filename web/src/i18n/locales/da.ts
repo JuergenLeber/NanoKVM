@@ -354,30 +354,30 @@ const da = {
         network: 'Virtuelt netværk',
         networkDesc: 'Monter det virtuelle netværkskort på den eksterne vært',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB-deskriptor',
+          description: 'Tilpas, hvordan USB-enheden vises på målværten',
+          preset: 'Forudindstilling',
+          vendorName: 'Producent',
+          productName: 'Produktnavn',
+          serialNumber: 'Serienummer',
+          chars: 'tegn',
+          randomize: 'Tilfældig',
+          readDevice: 'Læs enhed',
+          restoreDefaults: 'Gendan standarder',
+          apply: 'Anvend ændringer',
+          applySuccess: 'USB-deskriptor opdateret. Målet vil se en kort USB-gentilslutning.',
+          restoreSuccess: 'USB-deskriptor gendannet til fabriksstandarder.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Ændring af VID/PID kan få mål-OS til at geninstallere USB-drivere. Brug kendte værdier for at undgå kompatibilitetsproblemer.',
+          confirmTitle: 'Bekræft VID/PID-ændring',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Ændring af VID eller PID kan få målets operativsystem til at geninstallere USB-drivere. Er du sikker på, at du vil fortsætte?',
+          confirm: 'Ja, anvend',
+          cancel: 'Annuller',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Generisk',
+            brand: 'Mærke',
+            custom: 'Brugerdefineret'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -390,10 +390,10 @@ const da = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Kunne ikke læse USB-deskriptor',
+            writeFailed: 'Kunne ikke skrive USB-deskriptor',
+            restoreFailed: 'Kunne ikke gendanne USB-standarder',
+            invalidHex: 'VID og PID skal være gyldige hexadecimale værdier (f.eks. 0x1234)'
           }
         },
         reboot: 'Genstart',

@@ -356,30 +356,30 @@ const ja = {
         network: '仮想ネットワークカード',
         networkDesc: 'リモートホストに仮想ネットワークカードをマウントする',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB ディスクリプタ',
+          description: 'USB デバイスがターゲットホストに表示される方法をカスタマイズします',
+          preset: 'プリセット',
+          vendorName: 'メーカー',
+          productName: '製品名',
+          serialNumber: 'シリアル番号',
+          chars: '文字',
+          randomize: 'ランダム',
+          readDevice: 'デバイスを読み取る',
+          restoreDefaults: 'デフォルトに戻す',
+          apply: '変更を適用',
+          applySuccess: 'USB ディスクリプタを更新しました。ターゲットは短い USB 再接続を確認します。',
+          restoreSuccess: 'USB ディスクリプタを工場出荷時のデフォルトに復元しました。',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'VID/PID を変更すると、ターゲット OS が USB ドライバーを再インストールする場合があります。互換性の問題を避けるために既知の値を使用してください。',
+          confirmTitle: 'VID/PID の変更を確認',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'VID または PID を変更すると、ターゲットオペレーティングシステムが USB ドライバーを再インストールする場合があります。続行してもよろしいですか？',
+          confirm: 'はい、適用する',
+          cancel: 'キャンセル',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: '汎用',
+            brand: 'ブランド',
+            custom: 'カスタム'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -392,10 +392,10 @@ const ja = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'USB ディスクリプタの読み取りに失敗しました',
+            writeFailed: 'USB ディスクリプタの書き込みに失敗しました',
+            restoreFailed: 'USB デフォルトの復元に失敗しました',
+            invalidHex: 'VID と PID は有効な16進数値である必要があります（例: 0x1234）'
           }
         },
         reboot: '再起動',

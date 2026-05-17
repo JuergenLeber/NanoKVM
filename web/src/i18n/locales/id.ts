@@ -354,30 +354,30 @@ const id = {
         network: 'Jaringan virtual',
         networkDesc: 'Pasang kartu jaringan virtual pada host jarak jauh',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'Deskriptor USB',
+          description: 'Sesuaikan tampilan perangkat USB di host target',
+          preset: 'Prasetel',
+          vendorName: 'Produsen',
+          productName: 'Nama Produk',
+          serialNumber: 'Nomor Seri',
+          chars: 'kar.',
+          randomize: 'Acak',
+          readDevice: 'Baca Perangkat',
+          restoreDefaults: 'Pulihkan Default',
+          apply: 'Terapkan Perubahan',
+          applySuccess: 'Deskriptor USB diperbarui. Target akan melihat koneksi ulang USB sebentar.',
+          restoreSuccess: 'Deskriptor USB dipulihkan ke pengaturan default pabrik.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Mengubah VID/PID dapat menyebabkan OS target menginstal ulang driver USB. Gunakan nilai yang diketahui untuk menghindari masalah kompatibilitas.',
+          confirmTitle: 'Konfirmasi Perubahan VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Mengubah VID atau PID dapat menyebabkan sistem operasi target menginstal ulang driver USB. Apakah Anda yakin ingin melanjutkan?',
+          confirm: 'Ya, Terapkan',
+          cancel: 'Batal',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Umum',
+            brand: 'Merek',
+            custom: 'Kustom'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -390,10 +390,10 @@ const id = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Gagal membaca deskriptor USB',
+            writeFailed: 'Gagal menulis deskriptor USB',
+            restoreFailed: 'Gagal memulihkan default USB',
+            invalidHex: 'VID dan PID harus berupa nilai hex yang valid (mis. 0x1234)'
           }
         },
         reboot: 'Mulai ulang',

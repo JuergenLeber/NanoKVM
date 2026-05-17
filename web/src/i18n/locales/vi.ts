@@ -352,30 +352,30 @@ const vi = {
         network: 'Mạng ảo',
         networkDesc: 'Gắn card mạng ảo trên máy chủ từ xa',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'Mô tả USB',
+          description: 'Tùy chỉnh cách thiết bị USB xuất hiện với máy chủ mục tiêu',
+          preset: 'Cài đặt sẵn',
+          vendorName: 'Nhà sản xuất',
+          productName: 'Tên sản phẩm',
+          serialNumber: 'Số sê-ri',
+          chars: 'ký tự',
+          randomize: 'Ngẫu nhiên',
+          readDevice: 'Đọc thiết bị',
+          restoreDefaults: 'Khôi phục mặc định',
+          apply: 'Áp dụng thay đổi',
+          applySuccess: 'Mô tả USB đã được cập nhật. Mục tiêu sẽ thấy kết nối lại USB ngắn.',
+          restoreSuccess: 'Mô tả USB đã được khôi phục về mặc định nhà máy.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Thay đổi VID/PID có thể khiến hệ điều hành mục tiêu cài đặt lại driver USB. Sử dụng các giá trị đã biết để tránh sự cố tương thích.',
+          confirmTitle: 'Xác nhận thay đổi VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Thay đổi VID hoặc PID có thể khiến hệ điều hành mục tiêu cài đặt lại driver USB. Bạn có chắc muốn tiếp tục không?',
+          confirm: 'Có, áp dụng',
+          cancel: 'Hủy',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Chung',
+            brand: 'Thương hiệu',
+            custom: 'Tùy chỉnh'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -388,10 +388,10 @@ const vi = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Không thể đọc mô tả USB',
+            writeFailed: 'Không thể ghi mô tả USB',
+            restoreFailed: 'Không thể khôi phục mặc định USB',
+            invalidHex: 'VID và PID phải là giá trị hex hợp lệ (ví dụ: 0x1234)'
           }
         },
         reboot: 'Khởi động lại',

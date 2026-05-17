@@ -352,30 +352,30 @@ const ca = {
         network: 'Xarxa virtual',
         networkDesc: 'Munta una targeta de xarxa virtual al dispositiu remot',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'Descriptor USB',
+          description: "Personalitzeu com apareix el dispositiu USB a l'amfitrió de destinació",
+          preset: 'Preajust',
+          vendorName: 'Fabricant',
+          productName: 'Nom del producte',
+          serialNumber: 'Número de sèrie',
+          chars: 'car.',
+          randomize: 'Aleatori',
+          readDevice: 'Llegir dispositiu',
+          restoreDefaults: 'Restaurar valors predeterminats',
+          apply: 'Aplicar canvis',
+          applySuccess: 'Descriptor USB actualitzat. La destinació veurà una breu reconnexió USB.',
+          restoreSuccess: 'Descriptor USB restaurat als valors predeterminats de fàbrica.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            "Canviar VID/PID pot fer que el sistema operatiu de destinació reinstal·li els controladors USB. Utilitzeu valors coneguts per evitar problemes de compatibilitat.",
+          confirmTitle: 'Confirmar canvi de VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            "Canviar el VID o el PID pot fer que el sistema operatiu de destinació reinstal·li els controladors USB. Esteu segur que voleu continuar?",
+          confirm: 'Sí, aplica',
+          cancel: 'Cancel·la',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Genèric',
+            brand: 'Marca',
+            custom: 'Personalitzat'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -388,10 +388,10 @@ const ca = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: "No s'ha pogut llegir el descriptor USB",
+            writeFailed: "No s'ha pogut escriure el descriptor USB",
+            restoreFailed: "No s'ha pogut restaurar els valors predeterminats USB",
+            invalidHex: 'El VID i el PID han de ser valors hexadecimals vàlids (p. ex. 0x1234)'
           }
         },
         reboot: 'Reinicia',

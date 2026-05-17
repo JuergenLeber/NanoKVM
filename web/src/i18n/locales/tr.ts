@@ -355,30 +355,30 @@ const tr = {
         network: 'Sanal Ağ',
         networkDesc: 'Sanal ağ kartını uzak ana bilgisayara bağla',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB Tanımlayıcı',
+          description: 'USB aygıtının hedef ana bilgisayarda nasıl göründüğünü özelleştirin',
+          preset: 'Ön Ayar',
+          vendorName: 'Üretici',
+          productName: 'Ürün Adı',
+          serialNumber: 'Seri Numarası',
+          chars: 'karakter',
+          randomize: 'Rastgele',
+          readDevice: 'Cihazı Oku',
+          restoreDefaults: 'Varsayılanları Geri Yükle',
+          apply: 'Değişiklikleri Uygula',
+          applySuccess: 'USB tanımlayıcı güncellendi. Hedef kısa bir USB yeniden bağlantısı görecek.',
+          restoreSuccess: 'USB tanımlayıcı fabrika varsayılanlarına geri yüklendi.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'VID/PID değiştirilmesi, hedef işletim sisteminin USB sürücülerini yeniden yüklemesine neden olabilir. Uyumluluk sorunlarını önlemek için bilinen değerleri kullanın.',
+          confirmTitle: 'VID/PID Değişikliğini Onayla',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'VID veya PID değiştirilmesi, hedef işletim sisteminin USB sürücülerini yeniden yüklemesine neden olabilir. Devam etmek istediğinizden emin misiniz?',
+          confirm: 'Evet, Uygula',
+          cancel: 'İptal',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Genel',
+            brand: 'Marka',
+            custom: 'Özel'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -391,10 +391,10 @@ const tr = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'USB tanımlayıcı okunamadı',
+            writeFailed: 'USB tanımlayıcı yazılamadı',
+            restoreFailed: 'USB varsayılanları geri yüklenemedi',
+            invalidHex: 'VID ve PID geçerli onaltılık değerler olmalıdır (ör. 0x1234)'
           }
         },
         reboot: 'Yeniden Başlat',

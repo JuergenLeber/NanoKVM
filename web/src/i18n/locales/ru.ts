@@ -357,30 +357,30 @@ const ru = {
         network: 'Виртуальная сеть',
         networkDesc: 'Смонтировать виртуальное сетевое устройство на удаленном хосте',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB-дескриптор',
+          description: 'Настройте отображение USB-устройства на целевом хосте',
+          preset: 'Пресет',
+          vendorName: 'Производитель',
+          productName: 'Название продукта',
+          serialNumber: 'Серийный номер',
+          chars: 'симв.',
+          randomize: 'Случайно',
+          readDevice: 'Прочитать устройство',
+          restoreDefaults: 'Восстановить по умолчанию',
+          apply: 'Применить изменения',
+          applySuccess: 'USB-дескриптор обновлён. Цель увидит кратковременное переподключение USB.',
+          restoreSuccess: 'USB-дескриптор восстановлен до заводских настроек по умолчанию.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Изменение VID/PID может привести к переустановке USB-драйверов целевой ОС. Используйте известные значения, чтобы избежать проблем совместимости.',
+          confirmTitle: 'Подтвердить изменение VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Изменение VID или PID может привести к переустановке USB-драйверов целевой операционной системой. Вы уверены, что хотите продолжить?',
+          confirm: 'Да, применить',
+          cancel: 'Отмена',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Общий',
+            brand: 'Бренд',
+            custom: 'Пользовательский'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -393,10 +393,10 @@ const ru = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Не удалось прочитать USB-дескриптор',
+            writeFailed: 'Не удалось записать USB-дескриптор',
+            restoreFailed: 'Не удалось восстановить настройки USB по умолчанию',
+            invalidHex: 'VID и PID должны быть допустимыми шестнадцатеричными значениями (например, 0x1234)'
           }
         },
         reboot: 'Перезагрузка',

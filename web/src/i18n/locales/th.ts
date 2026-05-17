@@ -348,30 +348,30 @@ const th = {
         network: 'เครือข่ายจำลอง',
         networkDesc: 'เปิดใช้งานอุปกรณ์เครือข่ายจำลอง',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'ตัวอธิบาย USB',
+          description: 'ปรับแต่งวิธีที่อุปกรณ์ USB แสดงต่อโฮสต์เป้าหมาย',
+          preset: 'ค่าที่ตั้งไว้',
+          vendorName: 'ผู้ผลิต',
+          productName: 'ชื่อผลิตภัณฑ์',
+          serialNumber: 'หมายเลขซีเรียล',
+          chars: 'ตัวอักษร',
+          randomize: 'สุ่ม',
+          readDevice: 'อ่านอุปกรณ์',
+          restoreDefaults: 'กู้คืนค่าเริ่มต้น',
+          apply: 'ใช้การเปลี่ยนแปลง',
+          applySuccess: 'อัปเดตตัวอธิบาย USB แล้ว เป้าหมายจะเห็นการเชื่อมต่อ USB ใหม่ชั่วคราว',
+          restoreSuccess: 'คืนค่าตัวอธิบาย USB เป็นค่าเริ่มต้นจากโรงงานแล้ว',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'การเปลี่ยน VID/PID อาจทำให้ระบบปฏิบัติการเป้าหมายติดตั้งไดรเวอร์ USB ใหม่ ใช้ค่าที่รู้จักเพื่อหลีกเลี่ยงปัญหาความเข้ากันได้',
+          confirmTitle: 'ยืนยันการเปลี่ยน VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'การเปลี่ยน VID หรือ PID อาจทำให้ระบบปฏิบัติการเป้าหมายติดตั้งไดรเวอร์ USB ใหม่ คุณแน่ใจว่าต้องการดำเนินการต่อหรือไม่?',
+          confirm: 'ใช่ ดำเนินการ',
+          cancel: 'ยกเลิก',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'ทั่วไป',
+            brand: 'แบรนด์',
+            custom: 'กำหนดเอง'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -384,10 +384,10 @@ const th = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'ไม่สามารถอ่านตัวอธิบาย USB',
+            writeFailed: 'ไม่สามารถเขียนตัวอธิบาย USB',
+            restoreFailed: 'ไม่สามารถกู้คืนค่าเริ่มต้น USB',
+            invalidHex: 'VID และ PID ต้องเป็นค่าเลขฐานสิบหกที่ถูกต้อง (เช่น 0x1234)'
           }
         },
         reboot: 'รีบูต',

@@ -358,30 +358,30 @@ const nl = {
         network: 'Virtueel Netwerk',
         networkDesc: 'Koppel virtueel netwerk kaart aan de externe host',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB-descriptor',
+          description: 'Pas aan hoe het USB-apparaat eruitziet voor de doelhost',
+          preset: 'Voorinstelling',
+          vendorName: 'Fabrikant',
+          productName: 'Productnaam',
+          serialNumber: 'Serienummer',
+          chars: 'tekens',
+          randomize: 'Willekeurig',
+          readDevice: 'Apparaat lezen',
+          restoreDefaults: 'Standaardwaarden herstellen',
+          apply: 'Wijzigingen toepassen',
+          applySuccess: 'USB-descriptor bijgewerkt. Het doel ziet een korte USB-herverbinding.',
+          restoreSuccess: 'USB-descriptor hersteld naar fabrieksstandaarden.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            "Het wijzigen van VID/PID kan ertoe leiden dat het doel-OS USB-stuurprogramma's opnieuw installeert. Gebruik bekende waarden om compatibiliteitsproblemen te vermijden.",
+          confirmTitle: 'VID/PID-wijziging bevestigen',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            "Het wijzigen van de VID of PID kan ertoe leiden dat het doelbesturingssysteem USB-stuurprogramma's opnieuw installeert. Weet u zeker dat u wilt doorgaan?",
+          confirm: 'Ja, toepassen',
+          cancel: 'Annuleren',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Algemeen',
+            brand: 'Merk',
+            custom: 'Aangepast'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -394,10 +394,10 @@ const nl = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Kan USB-descriptor niet lezen',
+            writeFailed: 'Kan USB-descriptor niet schrijven',
+            restoreFailed: 'Kan USB-standaarden niet herstellen',
+            invalidHex: 'VID en PID moeten geldige hexadecimale waarden zijn (bijv. 0x1234)'
           }
         },
         reboot: 'Opnieuw opstarten',

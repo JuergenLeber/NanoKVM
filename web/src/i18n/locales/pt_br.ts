@@ -355,30 +355,30 @@ const pt_br = {
         network: 'Rede Virtual',
         networkDesc: 'Montar placa de rede virtual no host remoto',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'Descritor USB',
+          description: 'Personalize como o dispositivo USB aparece no host de destino',
+          preset: 'Predefinição',
+          vendorName: 'Fabricante',
+          productName: 'Nome do produto',
+          serialNumber: 'Número de série',
+          chars: 'caract.',
+          randomize: 'Aleatório',
+          readDevice: 'Ler dispositivo',
+          restoreDefaults: 'Restaurar padrões',
+          apply: 'Aplicar alterações',
+          applySuccess: 'Descritor USB atualizado. O destino verá uma breve reconexão USB.',
+          restoreSuccess: 'Descritor USB restaurado para os padrões de fábrica.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Alterar VID/PID pode fazer com que o sistema operacional de destino reinstale os drivers USB. Use valores conhecidos para evitar problemas de compatibilidade.',
+          confirmTitle: 'Confirmar alteração de VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Alterar o VID ou PID pode fazer com que o sistema operacional de destino reinstale os drivers USB. Tem certeza que deseja continuar?',
+          confirm: 'Sim, aplicar',
+          cancel: 'Cancelar',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Genérico',
+            brand: 'Marca',
+            custom: 'Personalizado'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -391,10 +391,10 @@ const pt_br = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Falha ao ler o descritor USB',
+            writeFailed: 'Falha ao escrever o descritor USB',
+            restoreFailed: 'Falha ao restaurar os padrões USB',
+            invalidHex: 'VID e PID devem ser valores hexadecimais válidos (ex. 0x1234)'
           }
         },
         reboot: 'Reiniciar',

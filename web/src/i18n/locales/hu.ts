@@ -357,30 +357,30 @@ const hu = {
         network: 'Virtuális hálózat',
         networkDesc: 'Virtuális hálózati kártya csatlakoztatása a távoli gazdagépen',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB-leíró',
+          description: 'Testreszabhatja, hogyan jelenik meg az USB-eszköz a célállomáson',
+          preset: 'Előbeállítás',
+          vendorName: 'Gyártó',
+          productName: 'Terméknév',
+          serialNumber: 'Sorozatszám',
+          chars: 'kar.',
+          randomize: 'Véletlenszerű',
+          readDevice: 'Eszköz olvasása',
+          restoreDefaults: 'Alapértékek visszaállítása',
+          apply: 'Módosítások alkalmazása',
+          applySuccess: 'USB-leíró frissítve. A cél egy rövid USB-újracsatlakozást fog látni.',
+          restoreSuccess: 'USB-leíró visszaállítva a gyári alapértékekre.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'A VID/PID módosítása miatt a cél operációs rendszer újratelepítheti az USB-illesztőprogramokat. Használjon ismert értékeket a kompatibilitási problémák elkerülése érdekében.',
+          confirmTitle: 'VID/PID módosítás megerősítése',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'A VID vagy PID módosítása miatt a cél operációs rendszer újratelepítheti az USB-illesztőprogramokat. Biztosan folytatni kívánja?',
+          confirm: 'Igen, alkalmaz',
+          cancel: 'Mégse',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Általános',
+            brand: 'Márka',
+            custom: 'Egyéni'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -393,10 +393,10 @@ const hu = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'USB-leíró olvasása sikertelen',
+            writeFailed: 'USB-leíró írása sikertelen',
+            restoreFailed: 'USB-alapértékek visszaállítása sikertelen',
+            invalidHex: 'A VID-nek és a PID-nek érvényes hexadecimális értéknek kell lennie (pl. 0x1234)'
           }
         },
         reboot: 'Újraindítás',

@@ -355,30 +355,30 @@ const cz = {
         network: 'Virtuální síť',
         networkDesc: 'Připojit virtuální síťovou kartu na vzdáleném hostiteli',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB deskriptor',
+          description: 'Přizpůsobte zobrazení USB zařízení na cílovém hostiteli',
+          preset: 'Předvolba',
+          vendorName: 'Výrobce',
+          productName: 'Název produktu',
+          serialNumber: 'Sériové číslo',
+          chars: 'znaků',
+          randomize: 'Náhodně',
+          readDevice: 'Číst zařízení',
+          restoreDefaults: 'Obnovit výchozí hodnoty',
+          apply: 'Použít změny',
+          applySuccess: 'USB deskriptor aktualizován. Cíl uvidí krátké znovupřipojení USB.',
+          restoreSuccess: 'USB deskriptor obnoven na výchozí hodnoty výrobce.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'Změna VID/PID může způsobit, že cílový operační systém přeinstaluje ovladače USB. Používejte známé hodnoty, abyste se vyhnuli problémům s kompatibilitou.',
+          confirmTitle: 'Potvrdit změnu VID/PID',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'Změna VID nebo PID může způsobit, že cílový operační systém přeinstaluje ovladače USB. Jste si jisti, že chcete pokračovat?',
+          confirm: 'Ano, použít',
+          cancel: 'Zrušit',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: 'Obecný',
+            brand: 'Značka',
+            custom: 'Vlastní'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -391,10 +391,10 @@ const cz = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'Nepodařilo se přečíst USB deskriptor',
+            writeFailed: 'Nepodařilo se zapsat USB deskriptor',
+            restoreFailed: 'Nepodařilo se obnovit výchozí hodnoty USB',
+            invalidHex: 'VID a PID musí být platné hexadecimální hodnoty (např. 0x1234)'
           }
         },
         reboot: 'Restartujte',

@@ -346,30 +346,30 @@ const zh = {
         reboot: '重新启动',
         rebootDesc: '您确定要重新启动 NanoKVM 吗？',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB 描述符',
+          description: '自定义 USB 设备在目标主机上的显示方式',
+          preset: '预设',
+          vendorName: '制造商',
+          productName: '产品名称',
+          serialNumber: '序列号',
+          chars: '字符',
+          randomize: '随机',
+          readDevice: '读取设备',
+          restoreDefaults: '恢复默认值',
+          apply: '应用更改',
+          applySuccess: 'USB 描述符已更新。目标将看到短暂的 USB 重新连接。',
+          restoreSuccess: 'USB 描述符已恢复为出厂默认值。',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            '更改 VID/PID 可能导致目标操作系统重新安装 USB 驱动程序。请使用已知值以避免兼容性问题。',
+          confirmTitle: '确认 VID/PID 更改',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            '更改 VID 或 PID 可能导致目标操作系统重新安装 USB 驱动程序。您确定要继续吗？',
+          confirm: '是，应用',
+          cancel: '取消',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: '通用',
+            brand: '品牌',
+            custom: '自定义'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -382,10 +382,10 @@ const zh = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: '读取 USB 描述符失败',
+            writeFailed: '写入 USB 描述符失败',
+            restoreFailed: '恢复 USB 默认值失败',
+            invalidHex: 'VID 和 PID 必须是有效的十六进制值（例如 0x1234）'
           }
         },
         okBtn: '是',

@@ -350,30 +350,30 @@ const ko = {
         network: '가상 네트워크',
         networkDesc: '원격 호스트에서 가상 네트워크 카드를 마운트합니다.',
         usbDescriptor: {
-          title: 'USB Descriptor',
-          description: 'Customize how the USB device appears to the target host',
-          preset: 'Preset',
-          vendorName: 'Manufacturer',
-          productName: 'Product Name',
-          serialNumber: 'Serial Number',
-          chars: 'chars',
-          randomize: 'Random',
-          readDevice: 'Read Device',
-          restoreDefaults: 'Restore Defaults',
-          apply: 'Apply Changes',
-          applySuccess: 'USB descriptor updated. The target will see a brief USB reconnection.',
-          restoreSuccess: 'USB descriptor restored to factory defaults.',
+          title: 'USB 디스크립터',
+          description: 'USB 장치가 대상 호스트에 표시되는 방식을 사용자 지정합니다',
+          preset: '프리셋',
+          vendorName: '제조사',
+          productName: '제품 이름',
+          serialNumber: '일련 번호',
+          chars: '자',
+          randomize: '무작위',
+          readDevice: '장치 읽기',
+          restoreDefaults: '기본값 복원',
+          apply: '변경 사항 적용',
+          applySuccess: 'USB 디스크립터가 업데이트되었습니다. 대상에서 잠깐의 USB 재연결이 발생합니다.',
+          restoreSuccess: 'USB 디스크립터가 공장 기본값으로 복원되었습니다.',
           vidPidWarning:
-            'Changing VID/PID may cause the target OS to reinstall USB drivers. Use known values to avoid compatibility issues.',
-          confirmTitle: 'Confirm VID/PID Change',
+            'VID/PID를 변경하면 대상 OS가 USB 드라이버를 재설치할 수 있습니다. 호환성 문제를 피하려면 알려진 값을 사용하세요.',
+          confirmTitle: 'VID/PID 변경 확인',
           confirmMessage:
-            'Changing the VID or PID may cause the target operating system to reinstall USB drivers. Are you sure you want to continue?',
-          confirm: 'Yes, Apply',
-          cancel: 'Cancel',
+            'VID 또는 PID를 변경하면 대상 운영 체제가 USB 드라이버를 재설치할 수 있습니다. 계속하시겠습니까?',
+          confirm: '예, 적용',
+          cancel: '취소',
           presetGroups: {
-            generic: 'Generic',
-            brand: 'Brand',
-            custom: 'Custom'
+            generic: '일반',
+            brand: '브랜드',
+            custom: '사용자 지정'
           },
           presets: {
             genericKeyboard: 'Generic Keyboard',
@@ -386,10 +386,10 @@ const ko = {
             dellKeyboard: 'Dell KB216 Keyboard'
           },
           errors: {
-            readFailed: 'Failed to read USB descriptor',
-            writeFailed: 'Failed to write USB descriptor',
-            restoreFailed: 'Failed to restore USB defaults',
-            invalidHex: 'VID and PID must be valid hex values (e.g. 0x1234)'
+            readFailed: 'USB 디스크립터 읽기 실패',
+            writeFailed: 'USB 디스크립터 쓰기 실패',
+            restoreFailed: 'USB 기본값 복원 실패',
+            invalidHex: 'VID 및 PID는 유효한 16진수 값이어야 합니다 (예: 0x1234)'
           }
         },
         reboot: '재부팅',
