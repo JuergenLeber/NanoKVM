@@ -2,7 +2,7 @@ package common
 
 /*
 	#cgo CFLAGS: -I../include
-	#cgo LDFLAGS: -L../dl_lib -lkvm
+	#cgo LDFLAGS: -L../dl_lib -lkvm -Wl,-rpath,$ORIGIN/dl_lib
 	#include "kvm_vision.h"
 */
 import "C"
