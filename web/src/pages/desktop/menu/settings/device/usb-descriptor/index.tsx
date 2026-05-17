@@ -270,10 +270,10 @@ export const UsbDescriptor = () => {
               {serialLen}/{maxLen} {t('settings.device.usbDescriptor.chars')}
             </span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2" style={{ width: 240 }}>
             <Input
               value={editedDescriptor.serialNumber}
-              style={{ width: 170 }}
+              className="flex-1"
               maxLength={maxLen}
               status={serialLen > maxLen ? 'error' : undefined}
               onChange={(e) => updateField('serialNumber', e.target.value)}
